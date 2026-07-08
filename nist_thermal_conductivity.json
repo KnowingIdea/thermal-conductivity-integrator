@@ -1,0 +1,1252 @@
+{
+  "source": "https://trc.nist.gov/cryogenics/materials/materialproperties.htm",
+  "retrieved": "2026-07-07",
+  "notes": "NIST TRC cryogenic thermal-conductivity curve fits. T in kelvin, k in W/(m-K). 'coefficients' is the list [a, b, c, ...] in letter order; letters beyond the list are zero. 'equation_type' keys into 'equation_forms'. Percent error is curve fit % error relative to data. Fits are only valid inside equation_range_K. Shorthand keys use chemical/materials-notation capitalization (element symbols where applicable: Pb=lead, Mo=molybdenum, Pt=platinum, BeCu=beryllium copper, FeNi#=iron-nickel wt%; polymer acronyms PTFE/PET/PI/PA/PVC/PS/PU).",
+  "equation_forms": {
+    "log10_polynomial": {
+      "equation": "k = 10^(a + b*log10(T) + c*log10(T)^2 + d*log10(T)^3 + e*log10(T)^4 + f*log10(T)^5 + g*log10(T)^6 + h*log10(T)^7 + i*log10(T)^8)",
+      "description": "Base-10 log polynomial: log10(k) is a polynomial in log10(T). T in kelvin, k in W/(m-K)."
+    },
+    "rational_sqrtT": {
+      "equation": "k = 10^((a + c*T^0.5 + e*T + g*T^1.5 + i*T^2) / (1 + b*T^0.5 + d*T + f*T^1.5 + h*T^2))",
+      "description": "Rational function of sqrt(T) powers in the exponent (used for OFHC copper, one fit per RRR value). T in kelvin, k in W/(m-K)."
+    }
+  },
+  "materials": {
+    "Al1100": {
+      "name": "Aluminum 1100",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        23.39172,
+        -148.5733,
+        422.1917,
+        -653.6664,
+        607.0402,
+        -346.152,
+        118.4276,
+        -22.2781,
+        1.770187
+      ],
+      "equation_range_K": [
+        4.0,
+        300.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": [
+        4.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/1100%20Aluminum/1100%20Aluminum_rev.htm"
+    },
+    "Al3003F": {
+      "name": "Aluminum 3003-F",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        0.63736,
+        -1.1437,
+        7.4624,
+        -12.6905,
+        11.9165,
+        -6.18721,
+        1.63939,
+        -0.172667,
+        0.0
+      ],
+      "equation_range_K": [
+        1.0,
+        300.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": [
+        4.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/3003F%20Aluminum/3003FAluminum_rev.htm"
+    },
+    "Al5083O": {
+      "name": "Aluminum 5083-O",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        -0.90933,
+        5.751,
+        -11.112,
+        13.612,
+        -9.3977,
+        3.6873,
+        -0.77295,
+        0.067336,
+        0.0
+      ],
+      "equation_range_K": [
+        1.0,
+        300.0
+      ],
+      "percent_error": 1.0,
+      "data_range_K": [
+        4.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/5083%20Aluminum/5083Aluminum_rev.htm"
+    },
+    "Al6061T6": {
+      "name": "Aluminum 6061-T6",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        0.07918,
+        1.0957,
+        -0.07277,
+        0.08084,
+        0.02803,
+        -0.09464,
+        0.04179,
+        -0.00571,
+        0.0
+      ],
+      "equation_range_K": [
+        1.0,
+        300.0
+      ],
+      "percent_error": 0.5,
+      "data_range_K": [
+        4.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/6061%20Aluminum/6061_T6Aluminum_rev.htm"
+    },
+    "Al6063T5": {
+      "name": "Aluminum 6063-T5",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        22.401433,
+        -141.13433,
+        394.95461,
+        -601.15377,
+        547.83202,
+        -305.99691,
+        102.38656,
+        -18.810237,
+        1.4576882
+      ],
+      "equation_range_K": [
+        4.0,
+        295.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": [
+        4.0,
+        296.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/6063_T5%20Alulminum/6063-T5Aluminum_rev.htm"
+    },
+    "Balsa6": {
+      "name": "Balsa (density = 6 lb/ft^3)",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        4172.447,
+        -11309.97,
+        12745.09,
+        -7647.584,
+        2577.309,
+        -462.538,
+        34.5351,
+        0.0,
+        0.0
+      ],
+      "equation_range_K": [
+        70.0,
+        300.0
+      ],
+      "percent_error": 1.5,
+      "data_range_K": [
+        88.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/Balsa/Balsa_rev.htm"
+    },
+    "Balsa11": {
+      "name": "Balsa (density = 11 lb/ft^3)",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        4815.4,
+        -12969.63,
+        14520.76,
+        -8654.164,
+        2895.712,
+        -515.7272,
+        38.19218,
+        0.0,
+        0.0
+      ],
+      "equation_range_K": [
+        75.0,
+        300.0
+      ],
+      "percent_error": 3.0,
+      "data_range_K": [
+        88.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/Balsa/Balsa_rev.htm"
+    },
+    "BeechGrain": {
+      "name": "Beechwood/phenolic (cross-laminate [0/90], grain direction)",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        -1375.11,
+        3740.69,
+        -4238.465,
+        2559.333,
+        -868.6067,
+        157.1018,
+        -11.82957,
+        0.0,
+        0.0
+      ],
+      "equation_range_K": [
+        80.0,
+        300.0
+      ],
+      "percent_error": 1.0,
+      "data_range_K": [
+        92.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/Beechwood_Phenolic/beechwood_rev.htm"
+    },
+    "BeechFlat": {
+      "name": "Beechwood/phenolic (cross-laminate [0/90], flatwise)",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        1035.33,
+        -2191.85,
+        1470.505,
+        39.845,
+        -541.9035,
+        289.844,
+        -65.2253,
+        5.59956,
+        0.0
+      ],
+      "equation_range_K": [
+        75.0,
+        300.0
+      ],
+      "percent_error": 1.5,
+      "data_range_K": [
+        92.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/Beechwood_Phenolic/beechwood_rev.htm"
+    },
+    "BeCu": {
+      "name": "Beryllium Copper",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        -0.50015,
+        1.9319,
+        -1.6954,
+        0.71218,
+        1.2788,
+        -1.6145,
+        0.68722,
+        -0.10501,
+        0.0
+      ],
+      "equation_range_K": [
+        1.0,
+        120.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": [
+        2.0,
+        80.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/Beryllium%20Copper/BerylliumCopper_rev.htm"
+    },
+    "Brass": {
+      "name": "Brass",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        0.021035,
+        -1.01835,
+        4.54083,
+        -5.03374,
+        3.20536,
+        -1.12933,
+        0.174057,
+        -0.0038151,
+        0.0
+      ],
+      "equation_range_K": [
+        5.0,
+        110.0
+      ],
+      "percent_error": 1.5,
+      "data_range_K": [
+        5.0,
+        116.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/Brass/Brass_rev.htm"
+    },
+    "CuRRR50": {
+      "name": "Copper (OFHC) (RRR = 50)",
+      "equation_type": "rational_sqrtT",
+      "coefficients": [
+        1.8743,
+        -0.41538,
+        -0.6018,
+        0.13294,
+        0.26426,
+        -0.0219,
+        -0.051276,
+        0.0014871,
+        0.003723
+      ],
+      "equation_range_K": [
+        4.0,
+        300.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": null,
+      "source_page": "https://trc.nist.gov/cryogenics/materials/OFHC%20Copper/OFHC_Copper_rev1.htm"
+    },
+    "CuRRR100": {
+      "name": "Copper (OFHC) (RRR = 100)",
+      "equation_type": "rational_sqrtT",
+      "coefficients": [
+        2.2154,
+        -0.47461,
+        -0.88068,
+        0.13871,
+        0.29505,
+        -0.02043,
+        -0.04831,
+        0.001281,
+        0.003207
+      ],
+      "equation_range_K": [
+        4.0,
+        300.0
+      ],
+      "percent_error": 1.0,
+      "data_range_K": null,
+      "source_page": "https://trc.nist.gov/cryogenics/materials/OFHC%20Copper/OFHC_Copper_rev1.htm"
+    },
+    "CuRRR150": {
+      "name": "Copper (OFHC) (RRR = 150)",
+      "equation_type": "rational_sqrtT",
+      "coefficients": [
+        2.3797,
+        -0.4918,
+        -0.98615,
+        0.13942,
+        0.30475,
+        -0.019713,
+        -0.046897,
+        0.0011969,
+        0.0029988
+      ],
+      "equation_range_K": [
+        4.0,
+        300.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": null,
+      "source_page": "https://trc.nist.gov/cryogenics/materials/OFHC%20Copper/OFHC_Copper_rev1.htm"
+    },
+    "CuRRR300": {
+      "name": "Copper (OFHC) (RRR = 300)",
+      "equation_type": "rational_sqrtT",
+      "coefficients": [
+        1.357,
+        0.3981,
+        2.669,
+        -0.1346,
+        -0.6683,
+        0.01342,
+        0.05773,
+        0.0002147,
+        0.0
+      ],
+      "equation_range_K": [
+        4.0,
+        300.0
+      ],
+      "percent_error": 1.0,
+      "data_range_K": null,
+      "source_page": "https://trc.nist.gov/cryogenics/materials/OFHC%20Copper/OFHC_Copper_rev1.htm"
+    },
+    "CuRRR500": {
+      "name": "Copper (OFHC) (RRR = 500)",
+      "equation_type": "rational_sqrtT",
+      "coefficients": [
+        2.8075,
+        -0.54074,
+        -1.2777,
+        0.15362,
+        0.36444,
+        -0.02105,
+        -0.051727,
+        0.0012226,
+        0.0030964
+      ],
+      "equation_range_K": [
+        4.0,
+        300.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": null,
+      "source_page": "https://trc.nist.gov/cryogenics/materials/OFHC%20Copper/OFHC_Copper_rev1.htm"
+    },
+    "G10N": {
+      "name": "Fiberglass Epoxy G-10 (Normal Direction)",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        -4.1236,
+        13.788,
+        -26.068,
+        26.272,
+        -14.663,
+        4.4954,
+        -0.6905,
+        0.0397,
+        0.0
+      ],
+      "equation_range_K": [
+        10.0,
+        300.0
+      ],
+      "percent_error": 5.0,
+      "data_range_K": [
+        4.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/G-10%20CR%20Fiberglass%20Epoxy/G10CRFiberglassEpoxy_rev.htm"
+    },
+    "G10W": {
+      "name": "Fiberglass Epoxy G-10 (Warp Direction)",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        -2.64827,
+        8.80228,
+        -24.8998,
+        41.1625,
+        -39.8754,
+        23.1778,
+        -7.95635,
+        1.48806,
+        -0.11701
+      ],
+      "equation_range_K": [
+        12.0,
+        300.0
+      ],
+      "percent_error": 5.0,
+      "data_range_K": [
+        4.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/G-10%20CR%20Fiberglass%20Epoxy/G10CRFiberglassEpoxy_rev.htm"
+    },
+    "GFPHeWarp": {
+      "name": "Glass Fabric/polyester (Helium, warp Direction)",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        689.532,
+        -2543.63,
+        3967.067,
+        -3400.366,
+        1731.725,
+        -524.309,
+        87.4249,
+        -6.19597,
+        0.0
+      ],
+      "equation_range_K": [
+        18.0,
+        300.0
+      ],
+      "percent_error": 1.0,
+      "data_range_K": [
+        38.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/Glass%20Fabric%20-%20Polyester/GlassFabric_Polyester_rev.htm"
+    },
+    "GFPN2Warp": {
+      "name": "Glass Fabric/polyester (Nitrogen, Warp Direction)",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        -2141.58,
+        4639.74,
+        -3249.405,
+        51.72425,
+        1101.977,
+        -613.8563,
+        141.1432,
+        -12.3133,
+        0.0
+      ],
+      "equation_range_K": [
+        60.0,
+        300.0
+      ],
+      "percent_error": 1.0,
+      "data_range_K": [
+        80.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/Glass%20Fabric%20-%20Polyester/GlassFabric_Polyester_rev.htm"
+    },
+    "GFPN2Normal": {
+      "name": "Glass Fabric/polyester (Nitrogen, normal direction)",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        2909.905,
+        -8616.64,
+        10542.69,
+        -6832.068,
+        2475.328,
+        -475.7,
+        37.9003,
+        0.0,
+        0.0
+      ],
+      "equation_range_K": [
+        70.0,
+        300.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": [
+        84.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/Glass%20Fabric%20-%20Polyester/GlassFabric_Polyester_rev.htm"
+    },
+    "Inconel718": {
+      "name": "Inconel 718",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        -8.28921,
+        39.447,
+        -83.4353,
+        98.169,
+        -67.2088,
+        26.7082,
+        -5.7205,
+        0.51115,
+        0.0
+      ],
+      "equation_range_K": [
+        4.0,
+        300.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": [
+        6.0,
+        275.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/Iconel%20718/Inconel718_rev.htm"
+    },
+    "FeNi36": {
+      "name": "Invar (Fe-36Ni)",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        -2.7064,
+        8.5191,
+        -15.923,
+        18.276,
+        -11.9116,
+        4.40318,
+        -0.86018,
+        0.068508,
+        0.0
+      ],
+      "equation_range_K": [
+        4.0,
+        300.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": [
+        4.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/Invar%28Fe-36Ni%29/Invar_rev.htm"
+    },
+    "Pb": {
+      "name": "Lead",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        38.963479,
+        -221.40505,
+        597.56622,
+        -900.93831,
+        816.40461,
+        -455.08342,
+        152.94025,
+        -28.451163,
+        2.2516244
+      ],
+      "equation_range_K": [
+        5.0,
+        295.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": [
+        4.0,
+        296.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/Lead/Lead_rev.htm"
+    },
+    "Mo": {
+      "name": "Molybdenum",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        10.78259,
+        -72.13065,
+        228.57351,
+        -384.50447,
+        381.43825,
+        -228.83783,
+        81.26658,
+        -15.69097,
+        1.26814
+      ],
+      "equation_range_K": [
+        4.0,
+        300.0
+      ],
+      "percent_error": 3.0,
+      "data_range_K": [
+        2.0,
+        373.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/Molybdenum/Molybdenum_rev.htm"
+    },
+    "FeNi2": {
+      "name": "Nickel Steel Fe 2.25 Ni",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        -3.5785,
+        20.804,
+        -55.826,
+        87.812,
+        -83.5016,
+        49.08,
+        -17.4348,
+        3.4277,
+        -0.28622
+      ],
+      "equation_range_K": [
+        4.0,
+        300.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": [
+        4.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/NickelSteel/NickelSteel_Fe2.25Ni%29_rev.htm"
+    },
+    "FeNi3": {
+      "name": "Nickel Steel Fe 3.25 Ni",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        0.89481,
+        -8.1998,
+        22.096,
+        -27.645,
+        19.7524,
+        -8.1113,
+        1.77866,
+        -0.16172,
+        0.0
+      ],
+      "equation_range_K": [
+        4.0,
+        300.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": [
+        4.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/NickelSteel/NickelSteel_Fe3.25Ni%29_rev.htm"
+    },
+    "FeNi5": {
+      "name": "Nickel Steel Fe 5.0 Ni",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        -0.57245,
+        -0.33593,
+        3.9379,
+        -5.4589,
+        4.2337,
+        -1.8653,
+        0.43223,
+        -0.041207,
+        0.0
+      ],
+      "equation_range_K": [
+        4.0,
+        300.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": [
+        4.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/NickelSteel/NickelSteel_Fe5.0Ni%29_rev.htm"
+    },
+    "FeNi9": {
+      "name": "Nickel Steel Fe 9.0 Ni",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        -0.0712785,
+        -3.48735,
+        10.6547,
+        -12.9153,
+        8.89066,
+        -3.51482,
+        0.743643,
+        -0.0657884,
+        0.0
+      ],
+      "equation_range_K": [
+        4.0,
+        300.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": [
+        4.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/NickelSteel/NickelSteel_Fe9.0Ni%29_rev.htm"
+    },
+    "Pt": {
+      "name": "Platinum",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        -7.33450054,
+        80.8550484,
+        -268.441084,
+        481.629105,
+        -503.890454,
+        314.812622,
+        -115.699394,
+        23.0957119,
+        -1.93361717
+      ],
+      "equation_range_K": [
+        4.0,
+        295.0
+      ],
+      "percent_error": 3.0,
+      "data_range_K": [
+        3.0,
+        298.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/Platinum/Platinum_rev.htm"
+    },
+    "PA": {
+      "name": "Polyamide (Nylon)",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        -2.6135,
+        2.3239,
+        -4.7586,
+        7.1602,
+        -4.9155,
+        1.6324,
+        -0.2507,
+        0.0131,
+        0.0
+      ],
+      "equation_range_K": [
+        1.0,
+        300.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": [
+        4.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/Polyamide%20%28Nylon%29/PolyamideNylon_rev.htm"
+    },
+    "PET": {
+      "name": "Polyethylene Terephthalate (Mylar)",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        -1.37737,
+        -3.40668,
+        20.5842,
+        -53.1244,
+        73.2476,
+        -57.6546,
+        26.1192,
+        -6.3479,
+        0.640331
+      ],
+      "equation_range_K": [
+        2.0,
+        80.0
+      ],
+      "percent_error": 1.0,
+      "data_range_K": [
+        1.0,
+        83.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/PET/PET_rev.htm"
+    },
+    "PI": {
+      "name": "Polyimide (Kapton)",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        5.73101,
+        -39.5199,
+        79.9313,
+        -83.8572,
+        50.9157,
+        -17.9835,
+        3.42413,
+        -0.27133,
+        0.0
+      ],
+      "equation_range_K": [
+        4.0,
+        300.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": [
+        4.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/Polyimide%20Kapton/PolyimideKapton_rev.htm"
+    },
+    "PS32Freon": {
+      "name": "Polystyrene (density: 31.88 kg/m^3 (=1.99 lb/ft^3 Freon filled))",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        -1557.5,
+        3984.7,
+        -3940.245,
+        1649.668,
+        12.80097,
+        -294.2616,
+        119.5898,
+        -20.6301,
+        1.36067
+      ],
+      "equation_range_K": [
+        90.0,
+        300.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": [
+        90.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/Polystyrene/polystyrenerev.html"
+    },
+    "PS32": {
+      "name": "Polystyrene (density: 32.04 kg/m^3 (=2.0 lb/ft^3))",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        -1145.45,
+        4086.02,
+        -6234.293,
+        5260.106,
+        -2649.914,
+        797.0372,
+        -132.5244,
+        9.3968,
+        0.0
+      ],
+      "equation_range_K": [
+        25.0,
+        300.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": [
+        33.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/Polystyrene/polystyrenerev.html"
+    },
+    "PS50": {
+      "name": "Polystyrene (density: 49.98 kg/m^3 (=3.12 lb/ft^3))",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        -1.5194,
+        -4.6449,
+        11.643,
+        -15.969,
+        12.722,
+        -5.821,
+        1.4174,
+        -0.14128,
+        0.0
+      ],
+      "equation_range_K": [
+        4.0,
+        300.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": [
+        7.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/Polystyrene/polystyrenerev.html"
+    },
+    "PS100": {
+      "name": "Polystyrene (density: 99.96 kg/m^3 (=6.24 lb/ft^3))",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        7.39582,
+        -59.6737,
+        160.58,
+        -240.33,
+        218.817,
+        -124.155,
+        42.9088,
+        -8.26683,
+        0.68082
+      ],
+      "equation_range_K": [
+        4.0,
+        300.0
+      ],
+      "percent_error": 3.0,
+      "data_range_K": [
+        4.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/Polystyrene/polystyrenerev.html"
+    },
+    "PU32Freon": {
+      "name": "Polyurethane (density: 31.88 kg/m^3 (=1.99 lb/ft^3 Freon filled))",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        -3218.679,
+        9201.61,
+        -10956.66,
+        6950.102,
+        -2476.94,
+        470.284,
+        -37.1669,
+        0.0,
+        0.0
+      ],
+      "equation_range_K": [
+        60.0,
+        300.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": [
+        76.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/Polyurethane/polyurethanerev.html"
+    },
+    "PU32CO2": {
+      "name": "Polyurethane (density: 32.04 kg/m^3 (=2.0 lb/ft^3 CO2 Filled))",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        3788.48,
+        -7642.66,
+        4592.448,
+        778.8423,
+        -2214.434,
+        1090.293,
+        -235.6349,
+        19.66088,
+        0.0
+      ],
+      "equation_range_K": [
+        85.0,
+        300.0
+      ],
+      "percent_error": 1.0,
+      "data_range_K": [
+        100.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/Polyurethane/polyurethanerev.html"
+    },
+    "PU49He": {
+      "name": "Polyurethane (density: 49.02 kg/m^3 (=3.06 lb/ft^3 He Filled))",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        -33.898,
+        117.81,
+        -178.376,
+        142.038,
+        -63.034,
+        14.958,
+        -1.5468,
+        0.020625,
+        0.0
+      ],
+      "equation_range_K": [
+        20.0,
+        300.0
+      ],
+      "percent_error": 1.0,
+      "data_range_K": [
+        30.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/Polyurethane/polyurethanerev.html"
+    },
+    "PU64Freon": {
+      "name": "Polyurethane (density: 64.08 kg/m^3 (=4.00 lb/ft^3 Freon filled))",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        789.79,
+        -2347.94,
+        3024.61,
+        -2206.78,
+        989.238,
+        -273.18,
+        43.065,
+        -2.9863,
+        0.0
+      ],
+      "equation_range_K": [
+        55.0,
+        300.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": [
+        88.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/Polyurethane/polyurethanerev.html"
+    },
+    "PVC20Air": {
+      "name": "Polyvinyl Chloride (PVC) (density: 20.02 kg/m^3 (=1.25 lb/ft^3 air fill gas))",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        11314.56,
+        -30824.32,
+        34964.24,
+        -21141.43,
+        7187.43,
+        -1302.708,
+        98.35252,
+        0.0,
+        0.0
+      ],
+      "equation_range_K": [
+        90.0,
+        300.0
+      ],
+      "percent_error": 1.5,
+      "data_range_K": [
+        100.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/PVC/PVCrev.htm"
+    },
+    "PVC56CO2": {
+      "name": "Polyvinyl Chloride (PVC) (density: 56.06 kg/m^3 (=3.5 lb/ft^3 CO2 blown))",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        -4123.51,
+        9690.59,
+        -7920.09,
+        1572.897,
+        1459.993,
+        -1028.329,
+        255.773,
+        -23.31925,
+        0.0
+      ],
+      "equation_range_K": [
+        100.0,
+        300.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": [
+        125.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/PVC/PVCrev.htm"
+    },
+    "SS304": {
+      "name": "Stainless Steel 304",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        -1.4087,
+        1.3982,
+        0.2543,
+        -0.626,
+        0.2334,
+        0.4256,
+        -0.4658,
+        0.165,
+        -0.0199
+      ],
+      "equation_range_K": [
+        1.0,
+        300.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": [
+        4.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/304Stainless/304Stainless_rev.htm"
+    },
+    "SS304L": {
+      "name": "Stainless Steel 304L",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        -1.4087,
+        1.3982,
+        0.2543,
+        -0.626,
+        0.2334,
+        0.4256,
+        -0.4658,
+        0.165,
+        -0.0199
+      ],
+      "equation_range_K": [
+        1.0,
+        300.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": [
+        4.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/304LStainless/304LStainless_rev.htm"
+    },
+    "SS310": {
+      "name": "Stainless Steel 310",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        -0.81907,
+        -2.1967,
+        9.1059,
+        -13.078,
+        10.853,
+        -5.1269,
+        1.2583,
+        -0.12395,
+        0.0
+      ],
+      "equation_range_K": [
+        1.0,
+        300.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": [
+        4.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/310%20Stainless/310Stainless_rev.htm"
+    },
+    "SS316": {
+      "name": "Stainless Steel 316",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        -1.4087,
+        1.3982,
+        0.2543,
+        -0.626,
+        0.2334,
+        0.4256,
+        -0.4658,
+        0.165,
+        -0.0199
+      ],
+      "equation_range_K": [
+        1.0,
+        300.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": [
+        4.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/316Stainless/316Stainless_rev.htm"
+    },
+    "PTFE": {
+      "name": "Teflon",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        2.738,
+        -30.677,
+        89.43,
+        -136.99,
+        124.69,
+        -69.556,
+        23.32,
+        -4.3135,
+        0.33829
+      ],
+      "equation_range_K": [
+        4.0,
+        300.0
+      ],
+      "percent_error": 5.0,
+      "data_range_K": [
+        4.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/Teflon/Teflon_rev.htm"
+    },
+    "Ti6Al4V": {
+      "name": "Ti-6Al-4V",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        -5107.8774,
+        19240.422,
+        -30789.064,
+        27134.756,
+        -14226.379,
+        4438.2154,
+        -763.07767,
+        55.796592,
+        0.0
+      ],
+      "equation_range_K": [
+        20.0,
+        300.0
+      ],
+      "percent_error": 2.0,
+      "data_range_K": [
+        23.0,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/Ti6Al4V/Ti6Al4V_rev.htm"
+    },
+    "Ti153333": {
+      "name": "Titanium 15-3-3-3",
+      "equation_type": "log10_polynomial",
+      "coefficients": [
+        -2.398794842,
+        8.970743802,
+        -29.19286973,
+        54.87139779,
+        -59.67137228,
+        38.89321714,
+        -14.94175848,
+        3.111616089,
+        -0.270452768
+      ],
+      "equation_range_K": [
+        1.4,
+        300.0
+      ],
+      "percent_error": 3.0,
+      "data_range_K": [
+        1.4,
+        300.0
+      ],
+      "source_page": "https://trc.nist.gov/cryogenics/materials/Titanium/Titanium.htm"
+    }
+  }
+}
