@@ -1247,6 +1247,26 @@
         300.0
       ],
       "source_page": "https://trc.nist.gov/cryogenics/materials/Titanium/Titanium.htm"
+    },
+    "PhosCu": {
+      "name": "Phosphor Copper",
+      "equation_type": "ln_polynomial",
+      "coefficients": [
+        -10.9482,
+        28.4752,
+        -32.3378,
+        20.9036,
+        -8.05399,
+        1.90329,
+        -0.271774,
+        0.0215998,
+        -0.000735095
+      ],
+      "equation_range_K": [
+        3.0,
+        300.0
+      ],
+      "source_page": "https://ntrs.nasa.gov/api/citations/20090032058/downloads/20090032058.pdf"
     }
   }
 }

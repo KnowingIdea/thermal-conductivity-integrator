@@ -1,40 +1,41 @@
-Al1100	Aluminum 1100	4K - 300K
-Al3003F	Aluminum 3003-F	1K - 300K
-Al5083O	Aluminum 5083-O	1K - 300K
-Al6061T6	Aluminum 6061-T6	1K - 300K
-Al6063T5	Aluminum 6063-T5	4K - 295K
-Balsa11	Balsa (density = 11 lb/ft^3)	75K - 300K
-Balsa6	Balsa (density = 6 lb/ft^3)	70K - 300K
-BeCu	Beryllium Copper	1K - 120K
-BeechFlat	Beechwood/phenolic (cross-laminate [0/90], flatwise)	75K - 300K
-BeechGrain	Beechwood/phenolic (cross-laminate [0/90], grain direction)	80K - 300K
-Brass	Brass	5K - 110K
-CuRRR50	Copper (OFHC) (RRR = 50)	4K - 300K
-CuRRR100	Copper (OFHC) (RRR = 100)	4K - 300K
-CuRRR150	Copper (OFHC) (RRR = 150)	4K - 300K
-CuRRR300	Copper (OFHC) (RRR = 300)	4K - 300K
-CuRRR500	Copper (OFHC) (RRR = 500)	4K - 300K
-FeNi2	Nickel Steel Fe 2.25 Ni	4K - 300K
-FeNi3	Nickel Steel Fe 3.25 Ni	4K - 300K
-FeNi36	Invar (Fe-36Ni)	4K - 300K
-FeNi5	Nickel Steel Fe 5.0 Ni	4K - 300K
-FeNi9	Nickel Steel Fe 9.0 Ni	4K - 300K
-G10N	Fiberglass Epoxy G-10 (Normal Direction)	10K - 300K
-G10W	Fiberglass Epoxy G-10 (Warp Direction)	12K - 300K
-GFPHeWarp	Glass Fabric/polyester (Helium, warp Direction)	18K - 300K
-GFPN2Normal	Glass Fabric/polyester (Nitrogen, normal direction)	70K - 300K
-GFPN2Warp	Glass Fabric/polyester (Nitrogen, Warp Direction)	60K - 300K
-Inconel718	Inconel 718	4K - 300K
-Mo	Molybdenum	4K - 300K
-PA	Polyamide (Nylon)	1K - 300K
-PET	Polyethylene Terephthalate (Mylar)	2K - 80K
-PI	Polyimide (Kapton)	4K - 300K
-PTFE	Teflon	4K - 300K
-Pb	Lead	5K - 295K
-Pt	Platinum	4K - 295K
-SS304	Stainless Steel 304	1K - 300K
-SS304L	Stainless Steel 304L	1K - 300K
-SS310	Stainless Steel 310	1K - 300K
-SS316	Stainless Steel 316	1K - 300K
-Ti153333	Titanium 15-3-3-3	1.4K - 300K
-Ti6Al4V	Ti-6Al-4V	20K - 300K
+Al1100,Aluminum 1100,4K - 300K
+Al3003F,Aluminum 3003-F,1K - 300K
+Al5083O,Aluminum 5083-O,1K - 300K
+Al6061T6,Aluminum 6061-T6,1K - 300K
+Al6063T5,Aluminum 6063-T5,4K - 295K
+Balsa11,Balsa (density = 11 lb/ft^3),75K - 300K
+Balsa6,Balsa (density = 6 lb/ft^3),70K - 300K
+BeCu,Beryllium Copper,1K - 120K
+BeechFlat,"Beechwood/phenolic (cross-laminate [0/90], flatwise)",75K - 300K
+BeechGrain,"Beechwood/phenolic (cross-laminate [0/90], grain direction)",80K - 300K
+Brass,Brass,5K - 110K
+CuRRR50,Copper (OFHC) (RRR = 50),4K - 300K
+CuRRR100,Copper (OFHC) (RRR = 100),4K - 300K
+CuRRR150,Copper (OFHC) (RRR = 150),4K - 300K
+CuRRR300,Copper (OFHC) (RRR = 300),4K - 300K
+CuRRR500,Copper (OFHC) (RRR = 500),4K - 300K
+FeNi2,Nickel Steel Fe 2.25 Ni,4K - 300K
+FeNi3,Nickel Steel Fe 3.25 Ni,4K - 300K
+FeNi36,Invar (Fe-36Ni),4K - 300K
+FeNi5,Nickel Steel Fe 5.0 Ni,4K - 300K
+FeNi9,Nickel Steel Fe 9.0 Ni,4K - 300K
+G10N,Fiberglass Epoxy G-10 (Normal Direction),10K - 300K
+G10W,Fiberglass Epoxy G-10 (Warp Direction),12K - 300K
+GFPHeWarp,"Glass Fabric/polyester (Helium, warp Direction)",18K - 300K
+GFPN2Normal,"Glass Fabric/polyester (Nitrogen, normal direction)",70K - 300K
+GFPN2Warp,"Glass Fabric/polyester (Nitrogen, Warp Direction)",60K - 300K
+Inconel718,Inconel 718,4K - 300K
+Mo,Molybdenum,4K - 300K
+PA,Polyamide (Nylon),1K - 300K
+PET,Polyethylene Terephthalate (Mylar),2K - 80K
+PI,Polyimide (Kapton),4K - 300K
+PTFE,Teflon,4K - 300K
+Pb,Lead,5K - 295K
+Pt,Platinum,4K - 295K
+SS304,Stainless Steel 304,1K - 300K
+SS304L,Stainless Steel 304L,1K - 300K
+SS310,Stainless Steel 310,1K - 300K
+SS316,Stainless Steel 316,1K - 300K
+Ti153333,Titanium 15-3-3-3,1.4K - 300K
+Ti6Al4V,Ti-6Al-4V,20K - 300K
+PhosCu,Phosphor Copper,3K - 300K

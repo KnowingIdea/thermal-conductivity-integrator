@@ -4,13 +4,13 @@ import json
 
 #### PROGRAM ####
 
-def buildCurves(inner, dielectric, outer, heat_stages):
+def buildCurves(materials, heat_stages):
     # for each material: get the coefficients and correct equation from the json
     try:
         data = json.load(open("nist_thermal_conductivity.json"))
-        mat_data = (data["materials"][inner], data["materials"][dielectric], data["materials"][outer])
-    except KeyError:
-        print("Invalid material type (use shorthand notation)")
+        mat_data = [data["materials"][m] for m in materials]
+    except KeyError as e:
+        raise ValueError(f"Invalid material type (use shorthand notation): {e}")
 
     # model function 1: polynomial of log10(T)
     def log_polynomial(args, t):
@@ -18,6 +18,12 @@ def buildCurves(inner, dielectric, outer, heat_stages):
         x = math.log10(t)
         poly = a + b * x + c * x**2 + d * x**3 + e * x**4 + f * x**5 + g * x**6 + h * x**7 + i * x**8
         return math.pow(10, poly)
+    
+    def ln_polynomial(args, t):
+        a, b, c, d, e, f, g, h, i = args
+        x = math.log(t)
+        poly = a + b * x + c * x**2 + d * x**3 + e * x**4 + f * x**5 + g * x**6 + h * x**7 + i * x**8
+        return math.exp(poly)
 
     # model function 2: rational function of sqrt(T)
     def rational_sqrt(args, t):
@@ -37,14 +43,16 @@ def buildCurves(inner, dielectric, outer, heat_stages):
             curves.append(lambda t, mat=mat: log_polynomial(mat["coefficients"], t))
         elif mat["equation_type"] == "rational_sqrtT":
             curves.append(lambda t, mat=mat: rational_sqrt(mat["coefficients"], t))
+        elif mat["equation_type"] == "ln_polynomial":
+            curves.append(lambda t, mat=mat: ln_polynomial(mat["coefficients"], t))
         else:
             raise ValueError("Equation parsing error")
     
     return curves
 
 def getAreas(radii_mm):
-    areas = [] 
-    for i in range(3):
+    areas = []
+    for i in range(len(radii_mm)):
         if i == 0:
             areas.append(math.pi * (radii_mm[i] ** 2))
         else:
@@ -53,10 +61,10 @@ def getAreas(radii_mm):
 
 def getThermalLoad(curves, areas, heat_stages, n_cables):
     # sums the total thermal load for each material & stage using the Fourier law
-    fluxes = [0, 0, 0]
+    fluxes = [0] * len(curves)
     for stage in heat_stages:
         low, high, length = stage
-        for i in range(3):
+        for i in range(len(curves)):
             heat_sum, *_ = quad(curves[i], low, high)
             fluxes[i] += n_cables * 1e-3 * heat_sum * areas[i] / length
 

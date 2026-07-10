@@ -5,19 +5,27 @@ import json
 #### CONFIG ####
 
 # materials (uses shorthand in tc_lookup.py)
-inner = "BeCu"
+inner = "PhosCu"
 dielectric = "PTFE"
 outer = "SS304"
 
 # geometry
-radii_mm = [0.287, 0.94, 1.19] # inner, dielectric, outer
+#radii_mm = [0.287, 0.94, 1.19] # inner, dielectric, outer
 # 047
+radii_mm = [0.0635, 0.0635, 0.0635]
 
 # number of cables between plates
-n_cables = 1
+n_cables = 16
 
+
+#-300 250 -50 250 -1 500-0.01
+#try: 50-4-mixing, 50-1-mixing, 300-4-mixing, 300-50-mixing
+
+# 50K plate load: 0.021120781659567794 W
+# 1K plate load
+#4-1
 # setup
-heat_stages = [(4, 50, 320)] # {low temp (K), high temp (K), length (mm)} for each stage
+heat_stages = [(1, 50, 500)] # {low temp (K), high temp (K), length (mm)} for each stage
 # 4K - 300K
 
 #### PROGRAM ####
@@ -28,6 +36,7 @@ try:
     mat_data = (data["materials"][inner], data["materials"][dielectric], data["materials"][outer])
 except KeyError:
     print("Invalid material type (use shorthand notation)")
+
 
 # model function 1: polynomial of log10(T)
 def log_polynomial(args, t):
@@ -71,9 +80,14 @@ for stage in heat_stages:
     low, high, length = stage
     for i in range(3):
         heat_sum, *_ = quad(curves[i], low, high)
-        fluxes[i] += 1e-3 * heat_sum * areas[i] / length
+        print((0.22 * (1 - 0.01)) * 1e-3 * areas[i] / length)
+        fluxes[i] += 1e-3 * (heat_sum) * areas[i] / length
+        #fluxes[i] += 1e-3 * (heat_sum + (0.22 * (1 - 0.01))) * areas[i] / length
 
 # total thermal load
 q = sum(fluxes) * n_cables
 
 print(q)
+
+
+print()
