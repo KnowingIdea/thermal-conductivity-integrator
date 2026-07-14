@@ -165,7 +165,7 @@
       ]
     },
     "CFRP": {
-      "name": "CFRP",
+      "name": "Carbon-fiber-reinforced polymer (CFRP)",
       "fit_type": "loglog",
       "coefficients": [
         0.0130096482941575,
@@ -184,7 +184,7 @@
       ]
     },
     "CFRPClearwater": {
-      "name": "CFRP Clearwater",
+      "name": "CFRP, Clearwater Composites rod",
       "fit_type": "Chebyshev",
       "coefficients": [
         -4.9010924972631535,
@@ -199,7 +199,7 @@
       ]
     },
     "CFRPDPP": {
-      "name": "CFRP DPP",
+      "name": "CFRP, DPP",
       "fit_type": "loglog",
       "coefficients": [
         0.027573011751218,
@@ -218,7 +218,7 @@
       ]
     },
     "CFRPGraphlite": {
-      "name": "CFRP Graphlite",
+      "name": "CFRP, Graphlite rod",
       "fit_type": "loglog",
       "coefficients": [
         0.0306516685740617,
@@ -271,7 +271,7 @@
       ]
     },
     "Corian": {
-      "name": "Corian",
+      "name": "Corian (mineral-filled acrylic)",
       "fit_type": "loglog",
       "coefficients": [
         -0.0306368422598418,
@@ -290,7 +290,7 @@
       ]
     },
     "CuNiCoax": {
-      "name": "CuNi Coax",
+      "name": "Copper-nickel coax cable",
       "fit_type": "polylog",
       "coefficients": [
         0.467215462299,
@@ -310,7 +310,7 @@
       ]
     },
     "CuOFHC": {
-      "name": "Cu OFHC",
+      "name": "OFHC copper (RRR = 100)",
       "fit_type": "OFHC_RRR_Wc",
       "coefficients": [
         0.631,
@@ -342,7 +342,7 @@
       "rrr": 100
     },
     "G10Normal": {
-      "name": "G10 CR Normal",
+      "name": "G-10CR fiberglass-epoxy (normal direction)",
       "fit_type": "polylog",
       "coefficients": [
         0.0,
@@ -361,7 +361,7 @@
       ]
     },
     "G10Warp": {
-      "name": "G10 CR Warp",
+      "name": "G-10CR fiberglass-epoxy (warp direction)",
       "fit_type": "polylog",
       "coefficients": [
         -0.11701,
@@ -380,7 +380,7 @@
       ]
     },
     "G10FR4": {
-      "name": "G10 FR4",
+      "name": "FR-4 fiberglass-epoxy laminate",
       "fit_type": "polylog",
       "coefficients": [
         -3.651867010123016,
@@ -395,7 +395,7 @@
       ]
     },
     "GFPHeWarp": {
-      "name": "Glass FabricPolyester He warp",
+      "name": "Glass fabric/polyester laminate (He, warp direction)",
       "fit_type": "polylog",
       "coefficients": [
         0.0,
@@ -414,7 +414,7 @@
       ]
     },
     "GFPN2Normal": {
-      "name": "Glass FabricPolyester Ni normal",
+      "name": "Glass fabric/polyester laminate (N₂, normal direction)",
       "fit_type": "polylog",
       "coefficients": [
         0.0,
@@ -433,7 +433,7 @@
       ]
     },
     "GFPN2Warp": {
-      "name": "Glass FabricPolyester Ni warp",
+      "name": "Glass fabric/polyester laminate (N₂, warp direction)",
       "fit_type": "polylog",
       "coefficients": [
         0.0,
@@ -452,7 +452,7 @@
       ]
     },
     "GraphiteBrad": {
-      "name": "Graphite brad",
+      "name": "Graphite, brad grade",
       "fit_type": "lowTextrapolate",
       "coefficients": [
         5.0,
@@ -466,7 +466,7 @@
       ]
     },
     "GraphiteA": {
-      "name": "Graphite a",
+      "name": "Graphite, grade a",
       "fit_type": "polylog",
       "coefficients": [
         -2.69698,
@@ -483,7 +483,7 @@
       ]
     },
     "GraphiteAGOT": {
-      "name": "Graphite AGOT",
+      "name": "AGOT nuclear graphite",
       "fit_type": "loglog",
       "coefficients": [
         -0.0003399749752382,
@@ -502,7 +502,7 @@
       ]
     },
     "GraphiteP": {
-      "name": "Graphite p",
+      "name": "Graphite, grade p",
       "fit_type": "polylog",
       "coefficients": [
         -2.69559,
@@ -517,7 +517,7 @@
       ]
     },
     "GraphitePOCO": {
-      "name": "Graphite POCOAXM5Q",
+      "name": "POCO AXM-5Q graphite",
       "fit_type": "loglog",
       "coefficients": [
         -0.001651881091528,
@@ -555,7 +555,7 @@
       ]
     },
     "Invar": {
-      "name": "Invar Fe36Ni",
+      "name": "Invar (Fe-36% Ni)",
       "fit_type": "polylog",
       "coefficients": [
         0.0,
@@ -574,7 +574,7 @@
       ]
     },
     "Kapton": {
-      "name": "Kapton",
+      "name": "Kapton (polyimide film)",
       "fit_type": "polylog",
       "coefficients": [
         0.0457103161192206,
@@ -589,7 +589,7 @@
       ]
     },
     "Ketron": {
-      "name": "Ketron",
+      "name": "Ketron (PEEK)",
       "fit_type": "loglog",
       "coefficients": [
         0.0314812199794782,
@@ -608,7 +608,7 @@
       ]
     },
     "Kevlar29": {
-      "name": "Kevlar29",
+      "name": "Kevlar 29",
       "fit_type": "powerlaw",
       "coefficients": [
         2.15e-05,
@@ -620,7 +620,7 @@
       ]
     },
     "Kevlar49": {
-      "name": "Kevlar49 Fiber Aramid",
+      "name": "Kevlar 49 fiber (aramid)",
       "fit_type": "NIST-experf",
       "coefficients": [
         -2.4219,
@@ -654,20 +654,8 @@
         296.0
       ]
     },
-    "LEGO": {
-      "name": "LEGO powerLaw ChawnerEtAl",
-      "fit_type": "powerlaw",
-      "coefficients": [
-        8.7e-05,
-        1.75
-      ],
-      "equation_range_K": [
-        0.07,
-        1.8
-      ]
-    },
     "Macor": {
-      "name": "Macor",
+      "name": "Macor (machinable glass-ceramic)",
       "fit_type": "polylog",
       "coefficients": [
         -6.681816685055839,
@@ -720,7 +708,7 @@
       ]
     },
     "Mylar": {
-      "name": "MylarPET",
+      "name": "Mylar (PET film)",
       "fit_type": "polylog",
       "coefficients": [
         0.640331,
@@ -739,7 +727,7 @@
       ]
     },
     "NbTi": {
-      "name": "NbTi",
+      "name": "NbTi (niobium-titanium superconductor)",
       "fit_type": "loglog",
       "coefficients": [
         0.0022590459115181,
@@ -758,7 +746,7 @@
       ]
     },
     "NbTi119Coax": {
-      "name": "NbTi119 Coax",
+      "name": "NbTi coax (type 119)",
       "fit_type": "polylog",
       "coefficients": [
         1.52948421951,
@@ -770,7 +758,7 @@
       ]
     },
     "NbTi160Coax": {
-      "name": "NbTi160 Coax",
+      "name": "NbTi coax (type 160)",
       "fit_type": "polylog",
       "coefficients": [
         1.48723112813,
@@ -891,7 +879,7 @@
       ]
     },
     "PhosBronze": {
-      "name": "Phosphorbronze",
+      "name": "Phosphor bronze",
       "fit_type": "polylog",
       "coefficients": [
         -0.1295722968650854,
@@ -925,7 +913,7 @@
       ]
     },
     "PS6": {
-      "name": "Polystyrene 6.24 lbft3",
+      "name": "Polystyrene foam (6.24 lb/ft³)",
       "fit_type": "polylog",
       "coefficients": [
         0.68082,
@@ -944,7 +932,7 @@
       ]
     },
     "PS2Freon": {
-      "name": "Polystyrene 1.99 lbft3 Freon",
+      "name": "Polystyrene foam (1.99 lb/ft³, Freon)",
       "fit_type": "polylog",
       "coefficients": [
         1.36067,
@@ -963,7 +951,7 @@
       ]
     },
     "PS2": {
-      "name": "Polystyrene 2.0 lbft3",
+      "name": "Polystyrene foam (2.0 lb/ft³)",
       "fit_type": "polylog",
       "coefficients": [
         0.0,
@@ -982,7 +970,7 @@
       ]
     },
     "PS3": {
-      "name": "Polystyrene 3.12 lbft3",
+      "name": "Polystyrene foam (3.12 lb/ft³)",
       "fit_type": "polylog",
       "coefficients": [
         0.0,
@@ -1001,7 +989,7 @@
       ]
     },
     "PU3He": {
-      "name": "Polyurethane 3.06 lbft3 He",
+      "name": "Polyurethane foam (3.06 lb/ft³, He)",
       "fit_type": "polylog",
       "coefficients": [
         0.0,
@@ -1020,7 +1008,7 @@
       ]
     },
     "PU2Freon": {
-      "name": "Polyurethane 1.99 lbft3 Freon",
+      "name": "Polyurethane foam (1.99 lb/ft³, Freon)",
       "fit_type": "polylog",
       "coefficients": [
         0.0,
@@ -1039,7 +1027,7 @@
       ]
     },
     "PU2CO2": {
-      "name": "Polyurethane 2.0 lbft3 CO2",
+      "name": "Polyurethane foam (2.0 lb/ft³, CO₂)",
       "fit_type": "polylog",
       "coefficients": [
         0.0,
@@ -1058,7 +1046,7 @@
       ]
     },
     "PU4Freon": {
-      "name": "Polyurethane 4.00 lbft3 Freon",
+      "name": "Polyurethane foam (4.00 lb/ft³, Freon)",
       "fit_type": "polylog",
       "coefficients": [
         0.0,
@@ -1077,7 +1065,7 @@
       ]
     },
     "PVCair": {
-      "name": "PVC 1.25 lbft3 air",
+      "name": "PVC foam (1.25 lb/ft³, air)",
       "fit_type": "polylog",
       "coefficients": [
         0.0,
@@ -1096,7 +1084,7 @@
       ]
     },
     "PVCCO2": {
-      "name": "PVC 3.5 lbft3 CO2",
+      "name": "PVC foam (3.5 lb/ft³, CO₂)",
       "fit_type": "polylog",
       "coefficients": [
         0.0,
@@ -1124,25 +1112,6 @@
       "equation_range_K": [
         50.0,
         296.0
-      ]
-    },
-    "SPAM": {
-      "name": "SPAM",
-      "fit_type": "loglog",
-      "coefficients": [
-        -0.0085777589764278,
-        0.0120668457815808,
-        0.0033984472394663,
-        9.083470097191832e-05,
-        -151.9461637123952,
-        8.585125736687486,
-        -4.699305482304121,
-        -0.7254801931503841,
-        1.356631051068587
-      ],
-      "equation_range_K": [
-        0.0575,
-        1.75
       ]
     },
     "SS304": {
@@ -1241,7 +1210,7 @@
       ]
     },
     "Stycast": {
-      "name": "Stycast",
+      "name": "Stycast (epoxy)",
       "fit_type": "powerlaw",
       "coefficients": [
         0.0161169592887202,
@@ -1271,27 +1240,8 @@
         297.0
       ]
     },
-    "TESTMAT": {
-      "name": "TESTMAT",
-      "fit_type": "loglog",
-      "coefficients": [
-        5.808323410245476e-07,
-        -8.817796527265562e-05,
-        0.0038764091766165,
-        0.071644189914851,
-        0.9400319759694272,
-        -6.36791928270701,
-        14.745173293633467,
-        -10.585246373122644,
-        73.83154640966242
-      ],
-      "equation_range_K": [
-        0.3846,
-        370.02
-      ]
-    },
     "Ti6Al4V": {
-      "name": "Ti6Al4V",
+      "name": "Ti-6Al-4V",
       "fit_type": "loglog",
       "coefficients": [
         -0.0426473304568707,
@@ -1310,7 +1260,7 @@
       ]
     },
     "Ti15333": {
-      "name": "Titanium 15333",
+      "name": "Titanium 15-3-3-3",
       "fit_type": "polylog",
       "coefficients": [
         -0.270453,
@@ -1329,7 +1279,7 @@
       ]
     },
     "Torlon": {
-      "name": "Torlon",
+      "name": "Torlon (PAI)",
       "fit_type": "loglog",
       "coefficients": [
         0.0123774706090516,
@@ -1348,7 +1298,7 @@
       ]
     },
     "Vespel": {
-      "name": "VESPEL",
+      "name": "Vespel (polyimide)",
       "fit_type": "loglog",
       "coefficients": [
         -0.0050278946777037,
@@ -1367,7 +1317,7 @@
       ]
     },
     "Balsa11": {
-      "name": "Wood Balsa 11 lbft3",
+      "name": "Balsa wood (11 lb/ft³)",
       "fit_type": "polylog",
       "coefficients": [
         0.0,
@@ -1386,7 +1336,7 @@
       ]
     },
     "Balsa6": {
-      "name": "Wood Balsa 6 lbft3",
+      "name": "Balsa wood (6 lb/ft³)",
       "fit_type": "polylog",
       "coefficients": [
         0.0,
@@ -1405,7 +1355,7 @@
       ]
     },
     "BeechFlat": {
-      "name": "Wood Beechwood flatwise",
+      "name": "Beechwood (flatwise)",
       "fit_type": "polylog",
       "coefficients": [
         0.0,
@@ -1424,7 +1374,7 @@
       ]
     },
     "BeechGrain": {
-      "name": "Wood Beechwood grain",
+      "name": "Beechwood (grain direction)",
       "fit_type": "polylog",
       "coefficients": [
         0.0,
@@ -1443,7 +1393,7 @@
       ]
     },
     "MapleOak": {
-      "name": "Wood MapleOak Wagner",
+      "name": "Maple/oak wood",
       "fit_type": "powerlaw",
       "coefficients": [
         0.0093,

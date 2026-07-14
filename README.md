@@ -137,12 +137,13 @@ streamlit run app.py
 
 ## Supported materials
 
-81 materials. Use the **shorthand** in the material input. The valid range is the
+78 materials. Use the **shorthand** in the material input. The valid range is the
 temperature span over which the fit is defined; using a material outside it
 extrapolates.
 
 | Shorthand | Material | Valid range (K) | Fit type |
 |-----------|----------|-----------------|----------|
+| `GraphiteAGOT` | AGOT nuclear graphite | 0.072 – 4.22 | loglog |
 | `Al1100` | Aluminum 1100 | 4 – 300 | polylog |
 | `Al1100H14` | Aluminum 1100H14 | 0.0932 – 3.09 | loglog |
 | `Al1100O` | Aluminum 1100O | 0.0908 – 2.11 | loglog |
@@ -150,77 +151,73 @@ extrapolates.
 | `Al5083O` | Aluminum 5083O | 4 – 300 | polylog |
 | `Al6061T6` | Aluminum 6061T6 | 4 – 300 | polylog |
 | `Al6063T5` | Aluminum 6063T5 | 4 – 296 | polylog |
+| `Balsa11` | Balsa wood (11 lb/ft³) | 88 – 300 | polylog |
+| `Balsa6` | Balsa wood (6 lb/ft³) | 88 – 300 | polylog |
+| `BeechFlat` | Beechwood (flatwise) | 92 – 300 | polylog |
+| `BeechGrain` | Beechwood (grain direction) | 92 – 300 | polylog |
 | `BeCu` | Beryllium Copper | 2 – 80 | polylog |
 | `Brass` | Brass | 53.5 – 972 | powerlaw |
-| `CFRP` | CFRP | 0.0764 – 4.84 | loglog |
-| `CFRPClearwater` | CFRP Clearwater | 0.134 – 4.84 | Chebyshev |
-| `CFRPDPP` | CFRP DPP | 0.104 – 4.02 | loglog |
-| `CFRPGraphlite` | CFRP Graphlite | 0.309 – 4.01 | loglog |
+| `CFRP` | Carbon-fiber-reinforced polymer (CFRP) | 0.0764 – 4.84 | loglog |
+| `CFRPClearwater` | CFRP, Clearwater Composites rod | 0.134 – 4.84 | Chebyshev |
+| `CFRPDPP` | CFRP, DPP | 0.104 – 4.02 | loglog |
+| `CFRPGraphlite` | CFRP, Graphlite rod | 0.309 – 4.01 | loglog |
 | `Constantan` | Constantan | 0.088 – 1070 | polylog |
 | `CuNi` | Copper-Nickel | 0.112 – 2.75 | loglog |
-| `Corian` | Corian | 0.0583 – 298 | loglog |
-| `CuOFHC` | Cu OFHC (RRR = 100) | 0.2 – 1250 | OFHC_RRR_Wc |
-| `CuNiCoax` | CuNi Coax | 0.05 – 7 | polylog |
-| `G10Normal` | G10 CR Normal | 4 – 300 | polylog |
-| `G10Warp` | G10 CR Warp | 4 – 300 | polylog |
-| `G10FR4` | G10 FR4 | 0.304 – 2.97 | polylog |
-| `GFPHeWarp` | Glass Fabric/Polyester (He, warp) | 38 – 300 | polylog |
-| `GFPN2Normal` | Glass Fabric/Polyester (N₂, normal) | 84 – 300 | polylog |
-| `GFPN2Warp` | Glass Fabric/Polyester (N₂, warp) | 80 – 300 | polylog |
-| `GraphiteA` | Graphite a | 0.06 – 4.22 | polylog |
-| `GraphiteAGOT` | Graphite AGOT | 0.072 – 4.22 | loglog |
-| `GraphiteBrad` | Graphite brad | 0.1 – 4.99 | lowTextrapolate |
-| `GraphiteP` | Graphite p | 0.06 – 4.22 | polylog |
-| `GraphitePOCO` | Graphite POCO AXM-5Q | 0.063 – 3.25 | loglog |
+| `CuNiCoax` | Copper-nickel coax cable | 0.05 – 7 | polylog |
+| `Corian` | Corian (mineral-filled acrylic) | 0.0583 – 298 | loglog |
+| `G10FR4` | FR-4 fiberglass-epoxy laminate | 0.304 – 2.97 | polylog |
+| `G10Normal` | G-10CR fiberglass-epoxy (normal direction) | 4 – 300 | polylog |
+| `G10Warp` | G-10CR fiberglass-epoxy (warp direction) | 4 – 300 | polylog |
+| `GFPHeWarp` | Glass fabric/polyester laminate (He, warp direction) | 38 – 300 | polylog |
+| `GFPN2Normal` | Glass fabric/polyester laminate (N₂, normal direction) | 84 – 300 | polylog |
+| `GFPN2Warp` | Glass fabric/polyester laminate (N₂, warp direction) | 80 – 300 | polylog |
+| `GraphiteBrad` | Graphite, brad grade | 0.1 – 4.99 | lowTextrapolate |
+| `GraphiteA` | Graphite, grade a | 0.06 – 4.22 | polylog |
+| `GraphiteP` | Graphite, grade p | 0.06 – 4.22 | polylog |
 | `Inconel718` | Inconel 718 | 6 – 275 | polylog |
-| `Invar` | Invar (Fe-36Ni) | 4 – 300 | polylog |
-| `Kapton` | Kapton | 0.536 – 307 | polylog |
-| `Ketron` | Ketron | 0.3 – 2.85 | loglog |
+| `Invar` | Invar (Fe-36% Ni) | 4 – 300 | polylog |
+| `Kapton` | Kapton (polyimide film) | 0.536 – 307 | polylog |
+| `Ketron` | Ketron (PEEK) | 0.3 – 2.85 | loglog |
 | `Kevlar29` | Kevlar 29 | 5 – 40 | powerlaw |
 | `Kevlar49` | Kevlar 49 fiber (aramid) | 0.1 – 291 | NIST-experf |
 | `Pb` | Lead | 4 – 296 | polylog |
-| `LEGO` | LEGO (ABS) | 0.07 – 1.8 | powerlaw |
-| `Macor` | Macor | 0.337 – 3.21 | polylog |
+| `Macor` | Macor (machinable glass-ceramic) | 0.337 – 3.21 | polylog |
 | `Manganin` | Manganin | 0.0103 – 1180 | loglog |
+| `MapleOak` | Maple/oak wood | 0.034 – 1000 | powerlaw |
 | `Mo` | Molybdenum | 2 – 373 | polylog |
-| `Mylar` | Mylar (PET) | 1 – 83 | polylog |
-| `NbTi` | NbTi | 0.115 – 19.7 | loglog |
-| `NbTi119Coax` | NbTi 119 Coax | 0.1 – 4 | polylog |
-| `NbTi160Coax` | NbTi 160 Coax | 0.1 – 4 | polylog |
+| `Mylar` | Mylar (PET film) | 1 – 83 | polylog |
+| `NbTi` | NbTi (niobium-titanium superconductor) | 0.115 – 19.7 | loglog |
+| `NbTi119Coax` | NbTi coax (type 119) | 0.1 – 4 | polylog |
+| `NbTi160Coax` | NbTi coax (type 160) | 0.1 – 4 | polylog |
 | `Nichrome` | Nichrome | 4 – 300 | polylog |
 | `FeNi2` | Nickel Steel Fe 2.25 Ni | 4 – 300 | polylog |
 | `FeNi3` | Nickel Steel Fe 3.25 Ni | 4 – 300 | polylog |
 | `FeNi5` | Nickel Steel Fe 5.0 Ni | 4 – 300 | polylog |
 | `FeNi9` | Nickel Steel Fe 9.0 Ni | 4 – 300 | polylog |
-| `Nylon` | Nylon (polyamide) | 4 – 300 | polylog |
-| `PhosBronze` | Phosphor Bronze | 3.22 – 448 | polylog |
+| `Nylon` | Nylon | 4 – 300 | polylog |
+| `CuOFHC` | OFHC copper (RRR = 100) | 0.2 – 1250 | OFHC_RRR_Wc |
+| `PhosBronze` | Phosphor bronze | 3.22 – 448 | polylog |
 | `Pt` | Platinum | 3 – 298 | polylog |
-| `PS2Freon` | Polystyrene 1.99 lb/ft³ (Freon) | 90 – 300 | polylog |
-| `PS2` | Polystyrene 2.0 lb/ft³ | 33 – 300 | polylog |
-| `PS3` | Polystyrene 3.12 lb/ft³ | 7 – 300 | polylog |
-| `PS6` | Polystyrene 6.24 lb/ft³ | 4 – 300 | polylog |
-| `PU2Freon` | Polyurethane 1.99 lb/ft³ (Freon) | 76 – 300 | polylog |
-| `PU2CO2` | Polyurethane 2.0 lb/ft³ (CO₂) | 100 – 300 | polylog |
-| `PU3He` | Polyurethane 3.06 lb/ft³ (He) | 30 – 300 | polylog |
-| `PU4Freon` | Polyurethane 4.00 lb/ft³ (Freon) | 88 – 300 | polylog |
-| `PVCair` | PVC 1.25 lb/ft³ (air) | 100 – 300 | polylog |
-| `PVCCO2` | PVC 3.5 lb/ft³ (CO₂) | 125 – 300 | polylog |
+| `GraphitePOCO` | POCO AXM-5Q graphite | 0.063 – 3.25 | loglog |
+| `PS2Freon` | Polystyrene foam (1.99 lb/ft³, Freon) | 90 – 300 | polylog |
+| `PS2` | Polystyrene foam (2.0 lb/ft³) | 33 – 300 | polylog |
+| `PS3` | Polystyrene foam (3.12 lb/ft³) | 7 – 300 | polylog |
+| `PS6` | Polystyrene foam (6.24 lb/ft³) | 4 – 300 | polylog |
+| `PU2Freon` | Polyurethane foam (1.99 lb/ft³, Freon) | 76 – 300 | polylog |
+| `PU2CO2` | Polyurethane foam (2.0 lb/ft³, CO₂) | 100 – 300 | polylog |
+| `PU3He` | Polyurethane foam (3.06 lb/ft³, He) | 30 – 300 | polylog |
+| `PU4Freon` | Polyurethane foam (4.00 lb/ft³, Freon) | 88 – 300 | polylog |
+| `PVCair` | PVC foam (1.25 lb/ft³, air) | 100 – 300 | polylog |
+| `PVCCO2` | PVC foam (3.5 lb/ft³, CO₂) | 125 – 300 | polylog |
 | `Si` | Silicon | 50 – 296 | powerlaw |
-| `SPAM` | SPAM | 0.0575 – 1.75 | loglog |
 | `SS304` | Stainless Steel 304 | 0.385 – 1670 | loglog |
 | `SS304L` | Stainless Steel 304L | 4 – 300 | polylog |
 | `SS310` | Stainless Steel 310 | 0.374 – 1270 | loglog |
 | `SS316` | Stainless Steel 316 | 4 – 300 | polylog |
 | `SS321` | Stainless Steel 321 | 0.393 – 1620 | loglog |
-| `Stycast` | Stycast | 0.0609 – 1.81 | powerlaw |
-| `PTFE` | Teflon (PTFE) | 0.124 – 297 | loglog |
-| `TESTMAT` | Test material | 0.385 – 370 | loglog |
+| `Stycast` | Stycast (epoxy) | 0.0609 – 1.81 | powerlaw |
+| `PTFE` | Teflon | 0.124 – 297 | loglog |
 | `Ti6Al4V` | Ti-6Al-4V | 0.0566 – 1170 | loglog |
 | `Ti15333` | Titanium 15-3-3-3 | 1.4 – 300 | polylog |
-| `Torlon` | Torlon | 0.303 – 2.98 | loglog |
-| `Vespel` | Vespel | 0.0703 – 3.03 | loglog |
-| `Balsa11` | Balsa wood 11 lb/ft³ | 88 – 300 | polylog |
-| `Balsa6` | Balsa wood 6 lb/ft³ | 88 – 300 | polylog |
-| `BeechFlat` | Beechwood, flatwise | 92 – 300 | polylog |
-| `BeechGrain` | Beechwood, grain direction | 92 – 300 | polylog |
-| `MapleOak` | Maple/Oak wood | 0.034 – 1000 | powerlaw |
+| `Torlon` | Torlon (PAI) | 0.303 – 2.98 | loglog |
+| `Vespel` | Vespel (polyimide) | 0.0703 – 3.03 | loglog |
