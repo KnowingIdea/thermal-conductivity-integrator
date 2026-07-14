@@ -3,7 +3,6 @@ import thermal_math
 import pandas as pd
 import plotly.graph_objects as go
 import numpy as np
-import re
 
 st.title("Thermal Conductivity Integrator")
 st.write("This is a simple web tool to calculate the thermal load between " \
@@ -16,7 +15,7 @@ st.write("Please follow the shorthand notation for materials found in the table"
 " at the bottom of the page.")
 
 # default (material, radius mm) per layer, extended for extra layers
-LAYER_DEFAULTS = [("CuRRR100", 0.29), ("PTFE", 0.94), ("SS304", 1.19)]
+LAYER_DEFAULTS = [("CuOFHC", 0.29), ("PTFE", 0.94), ("SS304", 1.19)]
 
 # chosen outside the form so changing it reruns and renders the right inputs
 n_layers = st.number_input("Number of Layers", min_value=1, value=3, step=1)
@@ -73,11 +72,8 @@ if submitted:
     t_values = np.linspace(low_temp, high_temp, 100)
     layer_curves = [np.array([c(t) for t in t_values]) for c in curves]
 
-    # valid temperature range per layer, parsed from the shorthand table
-    ranges = []
-    for mat in materials:
-        range_text = df.loc[df["Shorthand"] == mat, "Valid Temperature Range (K)"].values[0]
-        ranges.append([int(x) for x in re.findall(r"\d+\.?\d*", range_text)])
+    # valid fit range (K) per layer, read as numbers from the material data
+    ranges = thermal_math.getRanges(materials)
 
     plotted_ranges = ranges
     if log_temp_plot:

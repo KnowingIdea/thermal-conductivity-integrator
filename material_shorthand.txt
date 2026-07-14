@@ -1,41 +1,81 @@
 Al1100,Aluminum 1100,4K - 300K
-Al3003F,Aluminum 3003-F,1K - 300K
-Al5083O,Aluminum 5083-O,1K - 300K
-Al6061T6,Aluminum 6061-T6,1K - 300K
-Al6063T5,Aluminum 6063-T5,4K - 295K
-Balsa11,Balsa (density = 11 lb/ft^3),75K - 300K
-Balsa6,Balsa (density = 6 lb/ft^3),70K - 300K
-BeCu,Beryllium Copper,1K - 120K
-BeechFlat,"Beechwood/phenolic (cross-laminate [0/90], flatwise)",75K - 300K
-BeechGrain,"Beechwood/phenolic (cross-laminate [0/90], grain direction)",80K - 300K
-Brass,Brass,5K - 110K
-CuRRR50,Copper (OFHC) (RRR = 50),4K - 300K
-CuRRR100,Copper (OFHC) (RRR = 100),4K - 300K
-CuRRR150,Copper (OFHC) (RRR = 150),4K - 300K
-CuRRR300,Copper (OFHC) (RRR = 300),4K - 300K
-CuRRR500,Copper (OFHC) (RRR = 500),4K - 300K
+Al1100H14,Aluminum 1100H14,0.0932K - 3.09K
+Al1100O,Aluminum 1100O,0.0908K - 2.11K
+Al3003F,Aluminum 3003F,4K - 300K
+Al5083O,Aluminum 5083O,4K - 300K
+Al6061T6,Aluminum 6061T6,4K - 300K
+Al6063T5,Aluminum 6063T5,4K - 296K
+BeCu,Beryllium Copper,2K - 80K
+Brass,Brass,53.5K - 972K
+CFRP,CFRP,0.0764K - 4.84K
+CFRPClearwater,CFRP Clearwater,0.134K - 4.84K
+CFRPDPP,CFRP DPP,0.104K - 4.02K
+CFRPGraphlite,CFRP Graphlite,0.309K - 4.01K
+Constantan,Constantan,0.088K - 1070K
+CuNi,Copper-Nickel,0.112K - 2.75K
+Corian,Corian,0.0583K - 298K
+CuNiCoax,CuNi Coax,0.05K - 7K
+CuOFHC,Cu OFHC,0.2K - 1250K
+G10Normal,G10 CR Normal,4K - 300K
+G10Warp,G10 CR Warp,4K - 300K
+G10FR4,G10 FR4,0.304K - 2.97K
+GFPHeWarp,Glass FabricPolyester He warp,38K - 300K
+GFPN2Normal,Glass FabricPolyester Ni normal,84K - 300K
+GFPN2Warp,Glass FabricPolyester Ni warp,80K - 300K
+GraphiteBrad,Graphite brad,0.1K - 4.99K
+GraphiteA,Graphite a,0.06K - 4.22K
+GraphiteAGOT,Graphite AGOT,0.072K - 4.22K
+GraphiteP,Graphite p,0.06K - 4.22K
+GraphitePOCO,Graphite POCOAXM5Q,0.063K - 3.25K
+Inconel718,Inconel 718,6K - 275K
+Invar,Invar Fe36Ni,4K - 300K
+Kapton,Kapton,0.536K - 307K
+Ketron,Ketron,0.3K - 2.85K
+Kevlar29,Kevlar29,5K - 40K
+Kevlar49,Kevlar49 Fiber Aramid,0.1K - 291K
+Pb,Lead,4K - 296K
+LEGO,LEGO powerLaw ChawnerEtAl,0.07K - 1.8K
+Macor,Macor,0.337K - 3.21K
+Manganin,Manganin,0.0103K - 1180K
+Mo,Molybdenum,2K - 373K
+Mylar,MylarPET,1K - 83K
+NbTi,NbTi,0.115K - 19.7K
+NbTi119Coax,NbTi119 Coax,0.1K - 4K
+NbTi160Coax,NbTi160 Coax,0.1K - 4K
+Nichrome,Nichrome,4K - 300K
 FeNi2,Nickel Steel Fe 2.25 Ni,4K - 300K
 FeNi3,Nickel Steel Fe 3.25 Ni,4K - 300K
-FeNi36,Invar (Fe-36Ni),4K - 300K
 FeNi5,Nickel Steel Fe 5.0 Ni,4K - 300K
 FeNi9,Nickel Steel Fe 9.0 Ni,4K - 300K
-G10N,Fiberglass Epoxy G-10 (Normal Direction),10K - 300K
-G10W,Fiberglass Epoxy G-10 (Warp Direction),12K - 300K
-GFPHeWarp,"Glass Fabric/polyester (Helium, warp Direction)",18K - 300K
-GFPN2Normal,"Glass Fabric/polyester (Nitrogen, normal direction)",70K - 300K
-GFPN2Warp,"Glass Fabric/polyester (Nitrogen, Warp Direction)",60K - 300K
-Inconel718,Inconel 718,4K - 300K
-Mo,Molybdenum,4K - 300K
-PA,Polyamide (Nylon),1K - 300K
-PET,Polyethylene Terephthalate (Mylar),2K - 80K
-PI,Polyimide (Kapton),4K - 300K
-PTFE,Teflon,4K - 300K
-Pb,Lead,5K - 295K
-Pt,Platinum,4K - 295K
-SS304,Stainless Steel 304,1K - 300K
-SS304L,Stainless Steel 304L,1K - 300K
-SS310,Stainless Steel 310,1K - 300K
-SS316,Stainless Steel 316,1K - 300K
-Ti153333,Titanium 15-3-3-3,1.4K - 300K
-Ti6Al4V,Ti-6Al-4V,20K - 300K
-PhosCu,Phosphor Copper,3K - 300K
+Nylon,Nylon,4K - 300K
+PhosBronze,Phosphorbronze,3.22K - 448K
+Pt,Platinum,3K - 298K
+PS6,Polystyrene 6.24 lbft3,4K - 300K
+PS2Freon,Polystyrene 1.99 lbft3 Freon,90K - 300K
+PS2,Polystyrene 2.0 lbft3,33K - 300K
+PS3,Polystyrene 3.12 lbft3,7K - 300K
+PU3He,Polyurethane 3.06 lbft3 He,30K - 300K
+PU2Freon,Polyurethane 1.99 lbft3 Freon,76K - 300K
+PU2CO2,Polyurethane 2.0 lbft3 CO2,100K - 300K
+PU4Freon,Polyurethane 4.00 lbft3 Freon,88K - 300K
+PVCair,PVC 1.25 lbft3 air,100K - 300K
+PVCCO2,PVC 3.5 lbft3 CO2,125K - 300K
+Si,Silicon,50K - 296K
+SPAM,SPAM,0.0575K - 1.75K
+SS304,Stainless Steel 304,0.385K - 1670K
+SS304L,Stainless Steel 304L,4K - 300K
+SS310,Stainless Steel 310,0.374K - 1270K
+SS316,Stainless Steel 316,4K - 300K
+SS321,Stainless Steel 321,0.393K - 1620K
+Stycast,Stycast,0.0609K - 1.81K
+PTFE,Teflon,0.124K - 297K
+TESTMAT,TESTMAT,0.385K - 370K
+Ti6Al4V,Ti6Al4V,0.0566K - 1170K
+Ti15333,Titanium 15333,1.4K - 300K
+Torlon,Torlon,0.303K - 2.98K
+Vespel,VESPEL,0.0703K - 3.03K
+Balsa11,Wood Balsa 11 lbft3,88K - 300K
+Balsa6,Wood Balsa 6 lbft3,88K - 300K
+BeechFlat,Wood Beechwood flatwise,92K - 300K
+BeechGrain,Wood Beechwood grain,92K - 300K
+MapleOak,Wood MapleOak Wagner,0.034K - 1000K
