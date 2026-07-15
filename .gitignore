@@ -3,3 +3,5 @@
 __pycache__/
 .DS_Store
 .agents/
+.streamlit/secrets.toml
+.pytest_cache/

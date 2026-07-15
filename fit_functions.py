@@ -7,6 +7,7 @@ coefficients as *params, and returns conductivity k in W/m-K.
 """
 import numpy as np
 from scipy.special import erf
+from scipy.interpolate import PchipInterpolator
 
 
 def Nppoly(T, *param):
@@ -83,6 +84,17 @@ def Chebyshev(T, *param):
     return np.exp(np.polynomial.chebyshev.chebval(logT, param))
 
 
+def tabulated_loglog(T, temperatures, conductivities):
+    """Shape-preserving interpolation in log(T)-log(k), with no extrapolation."""
+    temperature = np.asarray(T, dtype=float)
+    interpolator = PchipInterpolator(
+        np.log(np.asarray(temperatures, dtype=float)),
+        np.log(np.asarray(conductivities, dtype=float)),
+        extrapolate=False,
+    )
+    return np.exp(interpolator(np.log(temperature)))
+
+
 def lowTextrapolate(T, *params):
     # polylog above params[0]; power law between params[0] and params[1]; sentinel below.
     k = []
@@ -121,4 +133,5 @@ FIT_DISPATCH = {
     "lowTextrapolate": lowTextrapolate,
     "Chebyshev": Chebyshev,
     "OFHC_RRR_Wc": OFHC_RRR_Wc,
+    "tabulated_loglog": tabulated_loglog,
 }

@@ -42,6 +42,21 @@ Radii must therefore **increase** from the innermost layer outward.
 
 ## Using the app
 
+The app now has two workspaces:
+
+- **Calculate** uses the curated built-in catalog plus any material datasets you
+  have reviewed and approved in the current browser session.
+- **Find a material** searches free scholarly indexes, retrieves open documents
+  or accepts a legally obtained upload, extracts tables deterministically, and
+  can optionally use Gemini's free tier for grounded discovery or difficult
+  table extraction. Every result remains a draft until you approve it.
+
+Researched datasets keep their source, DOI/URL, specimen details, extraction
+method, valid range, and raw points or published coefficients. Sources are kept
+separate rather than merged. Point-only datasets use shape-preserving
+interpolation in log-temperature/log-conductivity space and cannot extrapolate
+beyond their measured range.
+
 1. **Number of Layers** — choose how many concentric layers the cable has
    (default 3: inner conductor, dielectric, outer shield). Change this first;
    the material/radius inputs update to match.
@@ -131,6 +146,26 @@ published compilations.
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
+```
+
+To enable the optional research services, copy
+`.streamlit/secrets.toml.example` to `.streamlit/secrets.toml` and configure:
+
+- `CONTACT_EMAIL` for the Crossref polite pool and Unpaywall.
+- `OPENALEX_API_KEY` for OpenAlex's free daily allowance.
+- `GEMINI_API_KEY` for optional free-tier grounded search and structured
+  extraction. The app works without Gemini, and shows a disclosure because
+  free-tier content may be used by Google to improve its products.
+
+Approved researched materials are session-only. Download their JSON bundle if
+you want to import them in a later session or submit them for inclusion in the
+curated catalog.
+
+Run the automated suite with:
+
+```bash
+pip install -r requirements-dev.txt
+pytest -q
 ```
 
 ---
